@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 50,
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "demoLink": {
+      "type": "string",
+      "regex": "^https?:\\/\\/[^\\s$.?#].[^\\s]*$"
+    },
+    "repositoryLink": {
+      "type": "string",
+      "required": true,
+      "regex": "^https?:\\/\\/[^\\s$.?#].[^\\s]*$"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "technologiesUsed": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::skill.skill",
+      "inversedBy": "projects"
+    },
+    "dateCompleted": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
