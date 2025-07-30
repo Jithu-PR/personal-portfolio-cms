@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "6e231a66-9e81-43d1-87ca-ae10559a29fd",
+		"name": "Personal Portfolio CMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47103572",
+		"_collection_link": "https://telecoms-cosmonaut-38823873-6773689.postman.co/workspace/Team's-Workspace~f601a624-5f11-444f-8521-3c781a957ef4/collection/47103572-6e231a66-9e81-43d1-87ca-ae10559a29fd?action=share&source=collection_link&creator=47103572"
+	},
+	"item": [
+		{
+			"name": "Post new Project",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d2bb01433aec76206ccf3fb9089fd6a116a1d50f8a937ac22331f0fd0db5cfc9e783c1114a605f7e269af4ac411e144e82af2ae2451c0aec00ac3b648455e83dfa6e5d17776300c5aaa8d50bb92d7addc6f2e2086afbec176aac7923bd33b7fa5e858b653ea2a6875be7065c05a3ec020cf4ea4dd635ead9c68b38f95e483765",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"title\": \"Portfolio CMS\",\r\n    \"description\": [\r\n      {\r\n        \"type\": \"paragraph\",\r\n        \"children\": [\r\n          {\r\n            \"type\": \"text\",\r\n            \"text\": \"Built a dynamic portfolio website powered by a Strapi headless CMS, enabling real-time content updates without code changes. Implemented admin authentication and role-based access to manage profile, skills, education, and project entries. Developed a frontend in React and TailwindCSS, consuming REST APIs to fetch and display content. Ensured mobile responsiveness and optimized SEO with meta tags and dynamic routing using React Router. Deployed backend on Render and frontend on Vercel for fast and scalable delivery.\"\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"repositoryLink\": \"https://github.com/Jithu-PR/personal-portfolio-cms\",\r\n    \"dateCompleted\": \"2025-05-18\",\r\n    \"technologiesUsed\": [2, 7, 12, 15, 17]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/projects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"projects"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Post new Project",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"data\": {\r\n    \"title\": \"Portfolio CMS\",\r\n    \"description\": [\r\n      {\r\n        \"type\": \"paragraph\",\r\n        \"children\": [\r\n          {\r\n            \"type\": \"text\",\r\n            \"text\": \"Built a dynamic portfolio website powered by a Strapi headless CMS, enabling real-time content updates without code changes. Implemented admin authentication and role-based access to manage profile, skills, education, and project entries. Developed a frontend in React and TailwindCSS, consuming REST APIs to fetch and display content. Ensured mobile responsiveness and optimized SEO with meta tags and dynamic routing using React Router. Deployed backend on Render and frontend on Vercel for fast and scalable delivery.\"\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"repositoryLink\": \"https://github.com/Jithu-PR/personal-portfolio-cms\",\r\n    \"dateCompleted\": \"2025-05-18\",\r\n    \"technologiesUsed\": [2, 7, 12, 15, 17]\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/projects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "921"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Jul 2025 12:26:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 4,\n        \"documentId\": \"vu5oo017zti21r7ht4wvymtw\",\n        \"title\": \"Portfolio CMS\",\n        \"description\": [\n            {\n                \"type\": \"paragraph\",\n                \"children\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": \"Built a dynamic portfolio website powered by a Strapi headless CMS, enabling real-time content updates without code changes. Implemented admin authentication and role-based access to manage profile, skills, education, and project entries. Developed a frontend in React and TailwindCSS, consuming REST APIs to fetch and display content. Ensured mobile responsiveness and optimized SEO with meta tags and dynamic routing using React Router. Deployed backend on Render and frontend on Vercel for fast and scalable delivery.\"\n                    }\n                ]\n            }\n        ],\n        \"demoLink\": null,\n        \"repositoryLink\": \"https://github.com/Jithu-PR/personal-portfolio-cms\",\n        \"dateCompleted\": \"2025-05-18\",\n        \"createdAt\": \"2025-07-30T12:26:42.735Z\",\n        \"updatedAt\": \"2025-07-30T12:26:42.735Z\",\n        \"publishedAt\": \"2025-07-30T12:26:42.702Z\"\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all Projects",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d2bb01433aec76206ccf3fb9089fd6a116a1d50f8a937ac22331f0fd0db5cfc9e783c1114a605f7e269af4ac411e144e82af2ae2451c0aec00ac3b648455e83dfa6e5d17776300c5aaa8d50bb92d7addc6f2e2086afbec176aac7923bd33b7fa5e858b653ea2a6875be7065c05a3ec020cf4ea4dd635ead9c68b38f95e483765",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/projects?populate[technologiesUsed][fields][0]=name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"projects"
+					],
+					"query": [
+						{
+							"key": "populate[technologiesUsed][fields][0]",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all Projects",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/projects?populate[technologiesUsed][fields][0]=name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "populate[technologiesUsed][fields][0]",
+									"value": "name"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5279"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Jul 2025 12:24:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"documentId\": \"jkgoddvuhn0712lvl9n3nrpe\",\n            \"title\": \"Ecommerce Store\",\n            \"description\": [\n                {\n                    \"type\": \"paragraph\",\n                    \"children\": [\n                        {\n                            \"type\": \"text\",\n                            \"text\": \"Developed a full-stack e-commerce platform with user authentication, allowing customers to browse and purchase products securely. Implemented product management and order tracking functionalities, offering a seamless experience for users and administrators. Designed an intuitive admin panel for managing products, updating stock levels, and handling orders. Created and integrated REST APIs for smooth communication between the frontend (React) and backend(Node.js/Express). Integrated PayPal Developer Sandbox for secure payment processing, ensuring smooth and reliable transaction handling. Deployed the website live, enabling real-time user interaction and testing, ensuring optimal performance and reliability.\"\n                        }\n                    ]\n                }\n            ],\n            \"demoLink\": \"https://e-commerce-store-1-5qud.onrender.com\",\n            \"repositoryLink\": \"https://github.com/Jithu-PR/E-Commerce-Store\",\n            \"dateCompleted\": \"2025-02-07\",\n            \"createdAt\": \"2025-07-30T07:27:07.740Z\",\n            \"updatedAt\": \"2025-07-30T09:33:51.260Z\",\n            \"publishedAt\": \"2025-07-30T09:33:51.228Z\",\n            \"technologiesUsed\": [\n                {\n                    \"id\": 1,\n                    \"documentId\": \"jkccg4i64f6imfftmp2clrog\",\n                    \"name\": \"React\"\n                },\n                {\n                    \"id\": 10,\n                    \"documentId\": \"x8jcqst6j0vkmtf4gfjtmd7n\",\n                    \"name\": \"TailwindCSS\"\n                },\n                {\n                    \"id\": 2,\n                    \"documentId\": \"no98fu56xo3ats1q5jxj5lyf\",\n                    \"name\": \"Node.js\"\n                },\n                {\n                    \"id\": 12,\n                    \"documentId\": \"t6vyh33s2bjapla3sliesrw3\",\n                    \"name\": \"REST API\"\n                },\n                {\n                    \"id\": 9,\n                    \"documentId\": \"jujm9ku4j567cyxvtzybhyw1\",\n                    \"name\": \"CSS\"\n                },\n                {\n                    \"id\": 3,\n                    \"documentId\": \"evqvv2yqmj5t8126ohn8c5pu\",\n                    \"name\": \"Express.js\"\n                },\n                {\n                    \"id\": 13,\n                    \"documentId\": \"tt6v1c4k7dsv1m96kzlu06p7\",\n                    \"name\": \"Git\"\n                },\n                {\n                    \"id\": 14,\n                    \"documentId\": \"sl20e4yq8p7689bg5fzpmpac\",\n                    \"name\": \"Github\"\n                },\n                {\n                    \"id\": 8,\n                    \"documentId\": \"offqbc356h8lpqlq21x76y5n\",\n                    \"name\": \"HTML\"\n                },\n                {\n                    \"id\": 7,\n                    \"documentId\": \"t5i7o0wpnedrsqschw41jj0h\",\n                    \"name\": \"Javascript\"\n                },\n                {\n                    \"id\": 4,\n                    \"documentId\": \"yyb1o7n9zy77s520kxbc28g7\",\n                    \"name\": \"MongoDB\"\n                },\n                {\n                    \"id\": 11,\n                    \"documentId\": \"x6b9q7jqbgpamn6wa2nzl5up\",\n                    \"name\": \"Mongoose\"\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"documentId\": \"qzepw5novi4w20savcxmv7nn\",\n            \"title\": \"Task Management System\",\n            \"description\": [\n                {\n                    \"type\": \"paragraph\",\n                    \"children\": [\n                        {\n                            \"type\": \"text\",\n                            \"text\": \"Developed a dynamic To-Do list application using Next.js for server-side rendering and React for handling the user interface and state management. Implemented full task management functionality, including creating, editing, deleting, and marking tasks as completed. Used local storage to persist tasks across sessions, ensuring the user's tasks are retained even after page reloads. Utilized React hooks to manage the state and behaviour of tasks within the app for a responsive and interactive experience. Designed a minimalist, responsive UI using CSS Modules for styling and ensuring a clean, modular approach to the design. Deployed the application live, allowing users to interact with the app in real-time, ensuring an optimized and seamless\"\n                        }\n                    ]\n                }\n            ],\n            \"demoLink\": \"https://task-management-app-smoky-two.vercel.app\",\n            \"repositoryLink\": \"https://github.com/Jithu-PR/Task-Management-App\",\n            \"dateCompleted\": \"2025-03-13\",\n            \"createdAt\": \"2025-07-30T07:32:42.535Z\",\n            \"updatedAt\": \"2025-07-30T09:34:34.154Z\",\n            \"publishedAt\": \"2025-07-30T09:34:34.131Z\",\n            \"technologiesUsed\": [\n                {\n                    \"id\": 5,\n                    \"documentId\": \"af0036vdzndhxvxtf4wc6qyy\",\n                    \"name\": \"Next.js\"\n                },\n                {\n                    \"id\": 8,\n                    \"documentId\": \"offqbc356h8lpqlq21x76y5n\",\n                    \"name\": \"HTML\"\n                },\n                {\n                    \"id\": 10,\n                    \"documentId\": \"x8jcqst6j0vkmtf4gfjtmd7n\",\n                    \"name\": \"TailwindCSS\"\n                },\n                {\n                    \"id\": 9,\n                    \"documentId\": \"jujm9ku4j567cyxvtzybhyw1\",\n                    \"name\": \"CSS\"\n                },\n                {\n                    \"id\": 13,\n                    \"documentId\": \"tt6v1c4k7dsv1m96kzlu06p7\",\n                    \"name\": \"Git\"\n                },\n                {\n                    \"id\": 14,\n                    \"documentId\": \"sl20e4yq8p7689bg5fzpmpac\",\n                    \"name\": \"Github\"\n                },\n                {\n                    \"id\": 2,\n                    \"documentId\": \"no98fu56xo3ats1q5jxj5lyf\",\n                    \"name\": \"Node.js\"\n                },\n                {\n                    \"id\": 4,\n                    \"documentId\": \"yyb1o7n9zy77s520kxbc28g7\",\n                    \"name\": \"MongoDB\"\n                },\n                {\n                    \"id\": 11,\n                    \"documentId\": \"x6b9q7jqbgpamn6wa2nzl5up\",\n                    \"name\": \"Mongoose\"\n                },\n                {\n                    \"id\": 12,\n                    \"documentId\": \"t6vyh33s2bjapla3sliesrw3\",\n                    \"name\": \"REST API\"\n                },\n                {\n                    \"id\": 15,\n                    \"documentId\": \"nivxxi9ac6gcrqsauazwo2en\",\n                    \"name\": \"Postman\"\n                },\n                {\n                    \"id\": 7,\n                    \"documentId\": \"t5i7o0wpnedrsqschw41jj0h\",\n                    \"name\": \"Javascript\"\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"documentId\": \"k0pp9ultt53j8vrs1ooqmlb2\",\n            \"title\": \"Portfolio CMS\",\n            \"description\": [\n                {\n                    \"type\": \"paragraph\",\n                    \"children\": [\n                        {\n                            \"type\": \"text\",\n                            \"text\": \"Built a dynamic portfolio website powered by a Strapi headless CMS, enabling real-time content updates without code changes. Implemented admin authentication and role-based access to manage profile, skills, education, and project entries. Developed a frontend in React and TailwindCSS, consuming REST APIs to fetch and display content. Ensured mobile responsiveness and optimized SEO with meta tags and dynamic routing using React Router. Deployed backend on Render and frontend on Vercel for fast and scalable delivery.\"\n                        }\n                    ]\n                }\n            ],\n            \"demoLink\": null,\n            \"repositoryLink\": \"https://github.com/Jithu-PR/Portfolio-CMS\",\n            \"dateCompleted\": \"2025-05-18\",\n            \"createdAt\": \"2025-07-30T09:46:18.235Z\",\n            \"updatedAt\": \"2025-07-30T09:46:18.235Z\",\n            \"publishedAt\": \"2025-07-30T09:46:18.215Z\",\n            \"technologiesUsed\": [\n                {\n                    \"id\": 2,\n                    \"documentId\": \"no98fu56xo3ats1q5jxj5lyf\",\n                    \"name\": \"Node.js\"\n                },\n                {\n                    \"id\": 7,\n                    \"documentId\": \"t5i7o0wpnedrsqschw41jj0h\",\n                    \"name\": \"Javascript\"\n                },\n                {\n                    \"id\": 12,\n                    \"documentId\": \"t6vyh33s2bjapla3sliesrw3\",\n                    \"name\": \"REST API\"\n                },\n                {\n                    \"id\": 15,\n                    \"documentId\": \"nivxxi9ac6gcrqsauazwo2en\",\n                    \"name\": \"Postman\"\n                },\n                {\n                    \"id\": 17,\n                    \"documentId\": \"xktacrjj9ld8523g2awrt6w7\",\n                    \"name\": \"SQL\"\n                }\n            ]\n        }\n    ],\n    \"meta\": {\n        \"pagination\": {\n            \"page\": 1,\n            \"pageSize\": 25,\n            \"pageCount\": 1,\n            \"total\": 3\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Profile data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/profile?populate=socialLinks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "populate",
+							"value": "socialLinks"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Profile data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/profile?populate=socialLinks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"profile"
+							],
+							"query": [
+								{
+									"key": "populate",
+									"value": "socialLinks"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "connect-src 'self' https:;img-src 'self' data: blob: https://market-assets.strapi.io;media-src 'self' data: blob:;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline'"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": ""
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Strapi <strapi.io>"
+						},
+						{
+							"key": "Content-Length",
+							"value": "642"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 30 Jul 2025 12:24:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 1,\n        \"documentId\": \"zqn46tjbqoea90120pr69jg7\",\n        \"name\": \"Jithu P R\",\n        \"title\": \"Fullstack Developer\",\n        \"bio\": [\n            {\n                \"type\": \"paragraph\",\n                \"children\": [\n                    {\n                        \"type\": \"text\",\n                        \"text\": \"I'm a passionate developer with a love for creating clean, scalable web applications. I specialize in React, Node.js, and building beautiful user interfaces.\"\n                    }\n                ]\n            }\n        ],\n        \"email\": \"jithupr183@gmail.com\",\n        \"createdAt\": \"2025-07-30T06:57:47.096Z\",\n        \"updatedAt\": \"2025-07-30T06:57:47.096Z\",\n        \"publishedAt\": \"2025-07-30T06:57:44.948Z\",\n        \"socialLinks\": [\n            {\n                \"id\": 1,\n                \"name\": \"Linked In\",\n                \"url\": \"https://www.linkedin.com/in/jithu-p-r\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Github\",\n                \"url\": \"https://github.com/Jithu-PR\"\n            }\n        ]\n    },\n    \"meta\": {}\n}"
+				}
+			]
+		}
+	]
+}
